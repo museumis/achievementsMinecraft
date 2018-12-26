@@ -6,7 +6,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 /**
  * Clase para la gestion de ficheros
- * @author Ismael Martin Ramirez <br />
+ * @author Ismael <br />
  * <a href="https://museumis.github.io/Si/">Web personal</a>
  *
  */
