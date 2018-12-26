@@ -9,7 +9,7 @@ import org.json.JSONWriter;
 
 /**
  * Clase encargada de generar un datapack de logros
- * @author Ismael Martin Ramirez <br />
+ * @author Ismael <br />
  * <a href="https://museumis.github.io/Si/">Web personal</a>
  *
  */
@@ -111,7 +111,7 @@ public class GenerateFiles {
 	 */
 	public void addConstruccion() {
 
-		generarRootJson("bricks","Construccion","Obten todos los bloques de construcción","construccion",direcJsonConstruccion.getAbsolutePath(),"dead_tube_coral_block");
+		generarRootJson("bricks","Construccion","Obten todos los bloques de construcciÃ³n","construccion",direcJsonConstruccion.getAbsolutePath(),"dead_tube_coral_block");
 		generarRootFunction(direcFuncConstruccion.getAbsolutePath());
 		for (int i = 0; i < Names.construccion.length; i++) {
 			generarJsonTxt(Names.construccion[i], direcJsonConstruccion.getAbsolutePath(),"construccion");
@@ -472,7 +472,7 @@ public class GenerateFiles {
 	public void generarFunction(String nameItem, String ruta) {
 		String nameItemFirsMayuscula = nameItem.substring(0, 1).toUpperCase() + nameItem.substring(1).replaceAll("_", " ");
 
-		String txt = "#tellraw @s {\"color\":\"yellow\",\"text\":\"¡Conseguiste " + nameItemFirsMayuscula + "!\"}\r\n"
+		String txt = "#tellraw @s {\"color\":\"yellow\",\"text\":\"Â¡Conseguiste " + nameItemFirsMayuscula + "!\"}\r\n"
 				+ "scoreboard players add @s Advancements 1";
 				
 		ManejadorFichero mFich = new ManejadorFichero();
@@ -563,7 +563,7 @@ public class GenerateFiles {
 	public void generarFunctionLibrosEncantados(String nameItem, String ruta) {
 		String nameItemFirsMayuscula = nameItem.substring(0, 1).toUpperCase() + nameItem.substring(1).replaceAll("_", " ");
 
-		String txt = "#tellraw @s {\"color\":\"yellow\",\"text\":\"¡Conseguiste " + nameItemFirsMayuscula + "!\"}\r\n"
+		String txt = "#tellraw @s {\"color\":\"yellow\",\"text\":\"Â¡Conseguiste " + nameItemFirsMayuscula + "!\"}\r\n"
 				+ "scoreboard players add @s Advancements 1";
 				
 		ManejadorFichero mFich = new ManejadorFichero();
