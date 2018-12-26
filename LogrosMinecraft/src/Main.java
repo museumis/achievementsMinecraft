@@ -1,6 +1,6 @@
 /**
  * Clase iniciadora del proceso
- * @author Ismael Martin Ramirez <br />
+ * @author Ismael <br />
  * <a href="https://museumis.github.io/Si/">Web personal</a>
  *
  */
