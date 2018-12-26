@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Fishing rod.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Fishing rod ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:fishing_rod"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:fishing_rod"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:herramientas/fishing_rod"
+  },
+  "parent": "fullitem:herramientas/root"
+}

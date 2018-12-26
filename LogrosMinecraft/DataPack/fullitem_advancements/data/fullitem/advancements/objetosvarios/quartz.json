@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Quartz.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Quartz ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:quartz"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:quartz"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/quartz"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

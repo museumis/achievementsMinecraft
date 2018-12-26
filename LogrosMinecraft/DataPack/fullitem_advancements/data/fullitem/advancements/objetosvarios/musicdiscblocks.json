@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Music disc blocks.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Music disc blocks ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:music_disc_blocks"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:music_disc_blocks"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/music_disc_blocks"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

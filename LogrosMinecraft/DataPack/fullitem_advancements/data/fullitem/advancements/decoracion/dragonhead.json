@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Dragon head.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Dragon head ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:dragon_head"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:dragon_head"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/dragon_head"
+  },
+  "parent": "fullitem:decoracion/root"
+}

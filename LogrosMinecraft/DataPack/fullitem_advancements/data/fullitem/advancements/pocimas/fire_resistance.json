@@ -1,0 +1,31 @@
+{
+  "display": {
+    "description": {
+      "text": "Has elaborado Fire resistance.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Fire resistance ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:brewing_stand"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+    "criteria": {
+        "potion": {
+            "trigger": "minecraft:brewed_potion",
+            "conditions": {
+                "potion": "minecraft:fire_resistance"
+            }
+        }
+    },
+  "rewards": {
+    "function": "function:pocimas/potion"
+  },
+  "parent": "fullitem:pocimas/root"
+}

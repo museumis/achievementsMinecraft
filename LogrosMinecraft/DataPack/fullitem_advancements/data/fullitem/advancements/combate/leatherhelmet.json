@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Leather helmet.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Leather helmet ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:leather_helmet"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:leather_helmet"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:combate/leather_helmet"
+  },
+  "parent": "fullitem:combate/root"
+}

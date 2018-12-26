@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Birch button.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Birch button ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:birch_button"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:birch_button"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:redstone/birch_button"
+  },
+  "parent": "fullitem:redstone/root"
+}

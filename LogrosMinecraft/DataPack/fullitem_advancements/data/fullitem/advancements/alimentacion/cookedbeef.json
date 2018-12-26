@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Cooked beef.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Cooked beef ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:cooked_beef"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:cooked_beef"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:alimentacion/cooked_beef"
+  },
+  "parent": "fullitem:alimentacion/root"
+}

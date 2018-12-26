@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Iron nugget.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Iron nugget ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:iron_nugget"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:iron_nugget"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/iron_nugget"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Music disc 11.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Music disc 11 ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:music_disc_11"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:music_disc_11"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/music_disc_11"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

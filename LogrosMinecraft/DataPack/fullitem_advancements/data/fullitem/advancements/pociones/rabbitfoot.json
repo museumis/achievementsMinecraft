@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Rabbit foot.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Rabbit foot ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:rabbit_foot"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:rabbit_foot"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:pociones/rabbit_foot"
+  },
+  "parent": "fullitem:pociones/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Sea lantern.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Sea lantern ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:sea_lantern"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:sea_lantern"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/sea_lantern"
+  },
+  "parent": "fullitem:construccion/root"
+}

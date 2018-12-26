@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Golden helmet.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Golden helmet ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:golden_helmet"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:golden_helmet"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:combate/golden_helmet"
+  },
+  "parent": "fullitem:combate/root"
+}

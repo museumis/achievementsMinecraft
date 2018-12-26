@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Pink tulip.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Pink tulip ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:pink_tulip"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:pink_tulip"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/pink_tulip"
+  },
+  "parent": "fullitem:decoracion/root"
+}

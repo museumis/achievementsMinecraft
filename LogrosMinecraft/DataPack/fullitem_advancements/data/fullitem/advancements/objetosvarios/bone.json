@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Bone.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Bone ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:bone"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:bone"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/bone"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

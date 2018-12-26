@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Carrot on a stick.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Carrot on a stick ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:carrot_on_a_stick"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:carrot_on_a_stick"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:transporte/carrot_on_a_stick"
+  },
+  "parent": "fullitem:transporte/root"
+}

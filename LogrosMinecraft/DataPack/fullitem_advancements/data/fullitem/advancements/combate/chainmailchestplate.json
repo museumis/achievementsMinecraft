@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Chainmail chestplate.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Chainmail chestplate ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:chainmail_chestplate"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:chainmail_chestplate"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:combate/chainmail_chestplate"
+  },
+  "parent": "fullitem:combate/root"
+}

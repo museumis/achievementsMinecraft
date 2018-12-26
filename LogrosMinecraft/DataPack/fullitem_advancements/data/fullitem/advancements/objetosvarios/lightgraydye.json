@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Light gray dye.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Light gray dye ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:light_gray_dye"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:light_gray_dye"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/light_gray_dye"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

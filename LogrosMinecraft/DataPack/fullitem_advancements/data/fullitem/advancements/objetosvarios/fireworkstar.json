@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Firework star.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Firework star ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:firework_star"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:firework_star"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/firework_star"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

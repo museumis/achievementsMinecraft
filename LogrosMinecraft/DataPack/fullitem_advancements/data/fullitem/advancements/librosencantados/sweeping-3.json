@@ -1,0 +1,40 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Sweeping III",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Sweeping III",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:enchanted_book"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions":{
+				"items": [
+					{
+						"enchantments": [
+							{
+								"enchantment": "minecraft:sweeping",
+								"levels":3
+							}
+						]
+					}
+				]
+			}
+    }
+  },
+  "rewards": {
+    "function": "function:librosencantados/sweeping-3"
+  },
+  "parent": "fullitem:librosencantados/root"
+}

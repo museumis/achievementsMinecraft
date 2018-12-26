@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Rail.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Rail ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:rail"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:rail"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:transporte/rail"
+  },
+  "parent": "fullitem:transporte/root"
+}

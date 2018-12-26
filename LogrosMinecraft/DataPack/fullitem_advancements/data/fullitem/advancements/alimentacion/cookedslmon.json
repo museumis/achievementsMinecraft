@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Cooked slmon.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Cooked slmon ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:cooked_slmon"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:cooked_slmon"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:alimentacion/cooked_slmon"
+  },
+  "parent": "fullitem:alimentacion/root"
+}

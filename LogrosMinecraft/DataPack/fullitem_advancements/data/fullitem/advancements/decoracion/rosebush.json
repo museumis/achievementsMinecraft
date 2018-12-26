@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Rose bush.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Rose bush ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:rose_bush"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:rose_bush"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/rose_bush"
+  },
+  "parent": "fullitem:decoracion/root"
+}

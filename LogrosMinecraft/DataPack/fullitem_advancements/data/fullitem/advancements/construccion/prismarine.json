@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Prismarine.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Prismarine ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:prismarine"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:prismarine"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/prismarine"
+  },
+  "parent": "fullitem:construccion/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Ender chest.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Ender chest ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:ender_chest"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:ender_chest"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/ender_chest"
+  },
+  "parent": "fullitem:decoracion/root"
+}

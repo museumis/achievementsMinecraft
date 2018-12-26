@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Light blue dye.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Light blue dye ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:light_blue_dye"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:light_blue_dye"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/light_blue_dye"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

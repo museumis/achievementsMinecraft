@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Yellow terracotta.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Yellow terracotta ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:yellow_terracotta"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:yellow_terracotta"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/yellow_terracotta"
+  },
+  "parent": "fullitem:construccion/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Dead horn coral.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Dead horn coral ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:dead_horn_coral"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:dead_horn_coral"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/dead_horn_coral"
+  },
+  "parent": "fullitem:decoracion/root"
+}

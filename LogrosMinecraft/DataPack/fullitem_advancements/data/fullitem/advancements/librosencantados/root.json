@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:enchanted_book"
+        },
+        "title": {"translate":"Libros Encantados"},
+        "description": {"translate":"Obten todos los libros encantados"},
+        "background": "minecraft:textures/block/dead_tube_coral_block.png",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+	"rewards": {
+		"function": "function:librosencantados/root"
+    },		
+       "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+            }
+        }
+    }
+}

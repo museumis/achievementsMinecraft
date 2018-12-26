@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Oak button.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Oak button ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:oak_button"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:oak_button"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:redstone/oak_button"
+  },
+  "parent": "fullitem:redstone/root"
+}

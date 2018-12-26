@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Iron leggings.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Iron leggings ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:iron_leggings"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:iron_leggings"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:combate/iron_leggings"
+  },
+  "parent": "fullitem:combate/root"
+}

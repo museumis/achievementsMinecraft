@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Music disc mellohi.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Music disc mellohi ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:music_disc_mellohi"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:music_disc_mellohi"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/music_disc_mellohi"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

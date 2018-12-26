@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Golden chestplate.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Golden chestplate ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:golden_chestplate"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:golden_chestplate"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:combate/golden_chestplate"
+  },
+  "parent": "fullitem:combate/root"
+}

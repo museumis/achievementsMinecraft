@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Ice.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Ice ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:ice"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:ice"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/ice"
+  },
+  "parent": "fullitem:construccion/root"
+}

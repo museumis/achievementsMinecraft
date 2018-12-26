@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Spider eye.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Spider eye ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:spider_eye"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:spider_eye"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:alimentacion/spider_eye"
+  },
+  "parent": "fullitem:alimentacion/root"
+}

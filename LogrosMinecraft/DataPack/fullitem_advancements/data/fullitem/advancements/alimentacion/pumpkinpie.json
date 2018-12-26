@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Pumpkin pie.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Pumpkin pie ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:pumpkin_pie"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:pumpkin_pie"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:alimentacion/pumpkin_pie"
+  },
+  "parent": "fullitem:alimentacion/root"
+}

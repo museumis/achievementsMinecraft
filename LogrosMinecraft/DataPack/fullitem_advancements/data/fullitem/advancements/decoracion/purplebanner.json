@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Purple banner.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Purple banner ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:purple_banner"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:purple_banner"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/purple_banner"
+  },
+  "parent": "fullitem:decoracion/root"
+}

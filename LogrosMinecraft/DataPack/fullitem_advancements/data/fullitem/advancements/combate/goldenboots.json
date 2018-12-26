@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Golden boots.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Golden boots ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:golden_boots"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:golden_boots"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:combate/golden_boots"
+  },
+  "parent": "fullitem:combate/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Detector rail.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Detector rail ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:detector_rail"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:detector_rail"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:transporte/detector_rail"
+  },
+  "parent": "fullitem:transporte/root"
+}

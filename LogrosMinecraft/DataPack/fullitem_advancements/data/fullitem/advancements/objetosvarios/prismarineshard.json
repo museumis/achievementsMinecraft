@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Prismarine shard.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Prismarine shard ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:prismarine_shard"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:prismarine_shard"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/prismarine_shard"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

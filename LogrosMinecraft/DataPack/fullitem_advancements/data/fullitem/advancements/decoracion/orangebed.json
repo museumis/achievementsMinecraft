@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Orange bed.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Orange bed ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:orange_bed"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:orange_bed"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/orange_bed"
+  },
+  "parent": "fullitem:decoracion/root"
+}

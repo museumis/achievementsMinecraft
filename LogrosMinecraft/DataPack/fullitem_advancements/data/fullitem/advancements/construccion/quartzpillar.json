@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Quartz pillar.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Quartz pillar ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:quartz_pillar"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:quartz_pillar"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/quartz_pillar"
+  },
+  "parent": "fullitem:construccion/root"
+}

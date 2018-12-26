@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Acacia door.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Acacia door ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:acacia_door"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:acacia_door"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:redstone/acacia_door"
+  },
+  "parent": "fullitem:redstone/root"
+}

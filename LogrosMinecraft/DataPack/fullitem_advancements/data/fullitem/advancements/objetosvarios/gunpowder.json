@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Gunpowder.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Gunpowder ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:gunpowder"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:gunpowder"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/gunpowder"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

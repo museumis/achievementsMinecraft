@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Birch planks.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Birch planks ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:birch_planks"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:birch_planks"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/birch_planks"
+  },
+  "parent": "fullitem:construccion/root"
+}

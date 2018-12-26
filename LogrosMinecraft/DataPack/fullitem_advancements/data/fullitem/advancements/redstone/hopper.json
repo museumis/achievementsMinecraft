@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Hopper.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Hopper ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:hopper"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:hopper"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:redstone/hopper"
+  },
+  "parent": "fullitem:redstone/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Oxeye daisy.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Oxeye daisy ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:oxeye_daisy"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:oxeye_daisy"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/oxeye_daisy"
+  },
+  "parent": "fullitem:decoracion/root"
+}

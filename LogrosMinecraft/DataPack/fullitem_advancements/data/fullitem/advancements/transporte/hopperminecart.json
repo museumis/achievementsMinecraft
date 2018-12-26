@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Hopper minecart.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Hopper minecart ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:hopper_minecart"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:hopper_minecart"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:transporte/hopper_minecart"
+  },
+  "parent": "fullitem:transporte/root"
+}

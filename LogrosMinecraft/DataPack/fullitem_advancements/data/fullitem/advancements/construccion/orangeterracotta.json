@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Orange terracotta.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Orange terracotta ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:orange_terracotta"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:orange_terracotta"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/orange_terracotta"
+  },
+  "parent": "fullitem:construccion/root"
+}

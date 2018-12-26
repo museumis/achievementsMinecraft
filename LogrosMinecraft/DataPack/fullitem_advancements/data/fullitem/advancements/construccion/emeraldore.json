@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Emerald ore.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Emerald ore ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:emerald_ore"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:emerald_ore"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/emerald_ore"
+  },
+  "parent": "fullitem:construccion/root"
+}

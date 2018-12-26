@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Rabbit.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Rabbit ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:rabbit"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:rabbit"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:alimentacion/rabbit"
+  },
+  "parent": "fullitem:alimentacion/root"
+}

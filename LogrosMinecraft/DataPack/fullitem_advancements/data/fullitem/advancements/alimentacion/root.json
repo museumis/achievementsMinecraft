@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:apple"
+        },
+        "title": {"translate":"Alimentacion"},
+        "description": {"translate":"Obten todos los item de alimentacion"},
+        "background": "minecraft:textures/block/dead_tube_coral_block.png",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+	"rewards": {
+		"function": "function:alimentacion/root"
+    },		
+       "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+            }
+        }
+    }
+}

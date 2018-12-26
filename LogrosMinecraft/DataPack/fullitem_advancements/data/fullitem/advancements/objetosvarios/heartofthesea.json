@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Heart of the sea.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Heart of the sea ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:heart_of_the_sea"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/heart_of_the_sea"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

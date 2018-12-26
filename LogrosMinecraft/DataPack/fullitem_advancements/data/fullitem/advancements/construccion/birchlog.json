@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Birch log.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Birch log ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:birch_log"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:birch_log"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/birch_log"
+  },
+  "parent": "fullitem:construccion/root"
+}

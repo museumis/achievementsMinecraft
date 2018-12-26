@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Blue stained glass pane.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Blue stained glass pane ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:blue_stained_glass_pane"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:blue_stained_glass_pane"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/blue_stained_glass_pane"
+  },
+  "parent": "fullitem:decoracion/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Black stained glass pane.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Black stained glass pane ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:black_stained_glass_pane"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:black_stained_glass_pane"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/black_stained_glass_pane"
+  },
+  "parent": "fullitem:decoracion/root"
+}

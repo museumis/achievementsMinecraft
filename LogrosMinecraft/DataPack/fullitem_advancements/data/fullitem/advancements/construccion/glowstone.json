@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Glowstone.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Glowstone ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:glowstone"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:glowstone"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/glowstone"
+  },
+  "parent": "fullitem:construccion/root"
+}

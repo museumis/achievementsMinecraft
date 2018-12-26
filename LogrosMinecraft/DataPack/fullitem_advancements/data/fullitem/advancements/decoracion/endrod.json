@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido End rod.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " End rod ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:end_rod"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:end_rod"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/end_rod"
+  },
+  "parent": "fullitem:decoracion/root"
+}

@@ -1,0 +1,40 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Fortune III",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Fortune III",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:enchanted_book"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions":{
+				"items": [
+					{
+						"enchantments": [
+							{
+								"enchantment": "minecraft:fortune",
+								"levels":3
+							}
+						]
+					}
+				]
+			}
+    }
+  },
+  "rewards": {
+    "function": "function:librosencantados/fortune-3"
+  },
+  "parent": "fullitem:librosencantados/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Experience bottle.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Experience bottle ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:experience_bottle"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:experience_bottle"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/experience_bottle"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

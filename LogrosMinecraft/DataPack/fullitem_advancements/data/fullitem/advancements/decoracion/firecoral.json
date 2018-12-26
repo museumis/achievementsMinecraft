@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Fire coral.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Fire coral ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:fire_coral"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:fire_coral"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/fire_coral"
+  },
+  "parent": "fullitem:decoracion/root"
+}

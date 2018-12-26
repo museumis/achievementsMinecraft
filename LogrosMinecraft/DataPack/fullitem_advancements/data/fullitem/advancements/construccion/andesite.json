@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Andesite.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Andesite ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:andesite"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:andesite"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/andesite"
+  },
+  "parent": "fullitem:construccion/root"
+}

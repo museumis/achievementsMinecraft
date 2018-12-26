@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Dark oak stairs.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Dark oak stairs ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:dark_oak_stairs"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:dark_oak_stairs"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/dark_oak_stairs"
+  },
+  "parent": "fullitem:construccion/root"
+}

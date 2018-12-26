@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Chiseled stone bricks.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Chiseled stone bricks ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:chiseled_stone_bricks"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:chiseled_stone_bricks"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/chiseled_stone_bricks"
+  },
+  "parent": "fullitem:construccion/root"
+}

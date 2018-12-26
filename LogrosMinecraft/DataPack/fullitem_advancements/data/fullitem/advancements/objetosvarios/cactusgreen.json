@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Cactus green.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Cactus green ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:cactus_green"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:cactus_green"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/cactus_green"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

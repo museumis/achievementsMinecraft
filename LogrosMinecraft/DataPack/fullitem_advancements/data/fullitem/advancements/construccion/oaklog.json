@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Oak log.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Oak log ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:oak_log"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:oak_log"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/oak_log"
+  },
+  "parent": "fullitem:construccion/root"
+}

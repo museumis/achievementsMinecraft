@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Dark oak leaves.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Dark oak leaves ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:dark_oak_leaves"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:dark_oak_leaves"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/dark_oak_leaves"
+  },
+  "parent": "fullitem:decoracion/root"
+}

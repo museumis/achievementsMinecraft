@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Redstone lamp.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Redstone lamp ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:redstone_lamp"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:redstone_lamp"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:redstone/redstone_lamp"
+  },
+  "parent": "fullitem:redstone/root"
+}

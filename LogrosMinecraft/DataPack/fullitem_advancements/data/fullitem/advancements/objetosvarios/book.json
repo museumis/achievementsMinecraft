@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Book.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Book ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:book"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:book"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/book"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

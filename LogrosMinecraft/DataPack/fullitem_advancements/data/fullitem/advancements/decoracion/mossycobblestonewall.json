@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Mossy cobblestone wall.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Mossy cobblestone wall ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:mossy_cobblestone_wall"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:mossy_cobblestone_wall"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/mossy_cobblestone_wall"
+  },
+  "parent": "fullitem:decoracion/root"
+}

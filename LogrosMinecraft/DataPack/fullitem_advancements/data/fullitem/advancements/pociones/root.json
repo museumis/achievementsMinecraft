@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:glass_bottle"
+        },
+        "title": {"translate":"Pociones"},
+        "description": {"translate":"Obten todas las pociones"},
+        "background": "minecraft:textures/block/dead_tube_coral_block.png",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+	"rewards": {
+		"function": "function:pociones/root"
+    },		
+       "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+            }
+        }
+    }
+}

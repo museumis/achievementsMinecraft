@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido End crystal.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " End crystal ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:end_crystal"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:end_crystal"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/end_crystal"
+  },
+  "parent": "fullitem:decoracion/root"
+}

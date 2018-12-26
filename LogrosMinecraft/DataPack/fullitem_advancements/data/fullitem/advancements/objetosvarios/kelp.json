@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Kelp.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Kelp ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:kelp"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:kelp"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/kelp"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

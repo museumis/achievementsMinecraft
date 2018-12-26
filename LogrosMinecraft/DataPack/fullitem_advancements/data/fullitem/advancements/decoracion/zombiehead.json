@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Zombie head.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Zombie head ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:zombie_head"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:zombie_head"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/zombie_head"
+  },
+  "parent": "fullitem:decoracion/root"
+}

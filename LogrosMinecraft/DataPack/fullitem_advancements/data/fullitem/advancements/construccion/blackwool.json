@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Black wool.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Black wool ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:black_wool"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:black_wool"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/black_wool"
+  },
+  "parent": "fullitem:construccion/root"
+}

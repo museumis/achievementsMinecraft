@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Brain coral.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Brain coral ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:brain_coral"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:brain_coral"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/brain_coral"
+  },
+  "parent": "fullitem:decoracion/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Oak fence.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Oak fence ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:oak_fence"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:oak_fence"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/oak_fence"
+  },
+  "parent": "fullitem:decoracion/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Lime carpet.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Lime carpet ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:lime_carpet"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:lime_carpet"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/lime_carpet"
+  },
+  "parent": "fullitem:decoracion/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Acacia trapdoor.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Acacia trapdoor ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:acacia_trapdoor"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:acacia_trapdoor"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:redstone/acacia_trapdoor"
+  },
+  "parent": "fullitem:redstone/root"
+}

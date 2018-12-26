@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Diamond chestplate.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Diamond chestplate ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:diamond_chestplate"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:diamond_chestplate"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:combate/diamond_chestplate"
+  },
+  "parent": "fullitem:combate/root"
+}

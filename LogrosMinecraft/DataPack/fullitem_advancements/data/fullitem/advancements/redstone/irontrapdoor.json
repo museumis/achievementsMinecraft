@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Iron trapdoor.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Iron trapdoor ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:iron_trapdoor"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:iron_trapdoor"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:redstone/iron_trapdoor"
+  },
+  "parent": "fullitem:redstone/root"
+}

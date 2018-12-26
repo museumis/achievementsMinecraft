@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Black glazed terracotta.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Black glazed terracotta ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:black_glazed_terracotta"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:black_glazed_terracotta"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/black_glazed_terracotta"
+  },
+  "parent": "fullitem:decoracion/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Purple bed.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Purple bed ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:purple_bed"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:purple_bed"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/purple_bed"
+  },
+  "parent": "fullitem:decoracion/root"
+}

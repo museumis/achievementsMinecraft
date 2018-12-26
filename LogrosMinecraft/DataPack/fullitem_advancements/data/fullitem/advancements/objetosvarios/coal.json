@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Coal.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Coal ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:coal"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:coal"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/coal"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

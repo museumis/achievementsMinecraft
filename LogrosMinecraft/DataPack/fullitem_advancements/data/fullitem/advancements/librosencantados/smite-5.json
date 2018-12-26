@@ -1,0 +1,40 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Smite V",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Smite V",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:enchanted_book"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions":{
+				"items": [
+					{
+						"enchantments": [
+							{
+								"enchantment": "minecraft:smite",
+								"levels":5
+							}
+						]
+					}
+				]
+			}
+    }
+  },
+  "rewards": {
+    "function": "function:librosencantados/smite-5"
+  },
+  "parent": "fullitem:librosencantados/root"
+}

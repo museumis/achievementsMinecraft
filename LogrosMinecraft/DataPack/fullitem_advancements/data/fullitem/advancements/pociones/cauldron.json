@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Cauldron.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Cauldron ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:cauldron"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:cauldron"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:pociones/cauldron"
+  },
+  "parent": "fullitem:pociones/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Wither skeleton skull.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Wither skeleton skull ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:wither_skeleton_skull"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:wither_skeleton_skull"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/wither_skeleton_skull"
+  },
+  "parent": "fullitem:decoracion/root"
+}

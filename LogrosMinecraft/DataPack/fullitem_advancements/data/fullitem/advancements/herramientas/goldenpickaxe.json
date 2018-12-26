@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Golden pickaxe.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Golden pickaxe ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:golden_pickaxe"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:golden_pickaxe"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:herramientas/golden_pickaxe"
+  },
+  "parent": "fullitem:herramientas/root"
+}

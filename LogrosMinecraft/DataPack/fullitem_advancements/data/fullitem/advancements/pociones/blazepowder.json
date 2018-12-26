@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Blaze powder.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Blaze powder ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:blaze_powder"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:blaze_powder"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:pociones/blaze_powder"
+  },
+  "parent": "fullitem:pociones/root"
+}

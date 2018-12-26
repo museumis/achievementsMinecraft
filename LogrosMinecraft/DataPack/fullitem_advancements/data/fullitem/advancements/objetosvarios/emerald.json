@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Emerald.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Emerald ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:emerald"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:emerald"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/emerald"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

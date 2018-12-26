@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Jungle stairs.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Jungle stairs ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:jungle_stairs"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:jungle_stairs"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/jungle_stairs"
+  },
+  "parent": "fullitem:construccion/root"
+}

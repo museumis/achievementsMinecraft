@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Petrified oak slab.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Petrified oak slab ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:petrified_oak_slab"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:petrified_oak_slab"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/petrified_oak_slab"
+  },
+  "parent": "fullitem:construccion/root"
+}

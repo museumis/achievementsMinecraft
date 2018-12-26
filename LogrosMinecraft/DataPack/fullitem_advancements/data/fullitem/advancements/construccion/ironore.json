@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Iron ore.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Iron ore ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:iron_ore"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:iron_ore"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/iron_ore"
+  },
+  "parent": "fullitem:construccion/root"
+}

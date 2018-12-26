@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Golden hoe.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Golden hoe ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:golden_hoe"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:golden_hoe"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:herramientas/golden_hoe"
+  },
+  "parent": "fullitem:herramientas/root"
+}

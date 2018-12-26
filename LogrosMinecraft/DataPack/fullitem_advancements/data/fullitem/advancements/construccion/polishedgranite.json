@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Polished granite.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Polished granite ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:polished_granite"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:polished_granite"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/polished_granite"
+  },
+  "parent": "fullitem:construccion/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Brewing stand.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Brewing stand ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:brewing_stand"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:brewing_stand"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:pociones/brewing_stand"
+  },
+  "parent": "fullitem:pociones/root"
+}

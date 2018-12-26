@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Red mushroom.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Red mushroom ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:red_mushroom"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:red_mushroom"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/red_mushroom"
+  },
+  "parent": "fullitem:decoracion/root"
+}

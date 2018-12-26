@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Stripped jungle wood.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Stripped jungle wood ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:stripped_jungle_wood"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:stripped_jungle_wood"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/stripped_jungle_wood"
+  },
+  "parent": "fullitem:construccion/root"
+}

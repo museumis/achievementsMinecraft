@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Packed ice.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Packed ice ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:packed_ice"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:packed_ice"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/packed_ice"
+  },
+  "parent": "fullitem:construccion/root"
+}

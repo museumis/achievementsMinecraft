@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Daylight detector.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Daylight detector ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:daylight_detector"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:daylight_detector"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:redstone/daylight_detector"
+  },
+  "parent": "fullitem:redstone/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Compass.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Compass ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:compass"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:compass"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:herramientas/compass"
+  },
+  "parent": "fullitem:herramientas/root"
+}

@@ -1,0 +1,40 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Fire aspect II",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Fire aspect II",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:enchanted_book"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions":{
+				"items": [
+					{
+						"enchantments": [
+							{
+								"enchantment": "minecraft:fire_aspect",
+								"levels":2
+							}
+						]
+					}
+				]
+			}
+    }
+  },
+  "rewards": {
+    "function": "function:librosencantados/fire_aspect-2"
+  },
+  "parent": "fullitem:librosencantados/root"
+}

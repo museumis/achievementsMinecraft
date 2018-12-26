@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Gold ingot.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Gold ingot ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:gold_ingot"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:gold_ingot"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/gold_ingot"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

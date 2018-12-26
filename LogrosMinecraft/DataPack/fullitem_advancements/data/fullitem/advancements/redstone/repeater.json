@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Repeater.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Repeater ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:repeater"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:repeater"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:redstone/repeater"
+  },
+  "parent": "fullitem:redstone/root"
+}

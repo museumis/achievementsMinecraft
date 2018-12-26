@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Purple carpet.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Purple carpet ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:purple_carpet"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:purple_carpet"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/purple_carpet"
+  },
+  "parent": "fullitem:decoracion/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Soul sand.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Soul sand ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:soul_sand"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:soul_sand"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/soul_sand"
+  },
+  "parent": "fullitem:construccion/root"
+}

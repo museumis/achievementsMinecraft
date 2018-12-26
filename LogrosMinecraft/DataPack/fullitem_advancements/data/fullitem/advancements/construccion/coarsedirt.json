@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Coarse dirt.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Coarse dirt ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:coarse_dirt"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:coarse_dirt"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/coarse_dirt"
+  },
+  "parent": "fullitem:construccion/root"
+}

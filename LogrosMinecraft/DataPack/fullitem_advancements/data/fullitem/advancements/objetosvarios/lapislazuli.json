@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Lapis lazuli.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Lapis lazuli ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:lapis_lazuli"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:lapis_lazuli"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/lapis_lazuli"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

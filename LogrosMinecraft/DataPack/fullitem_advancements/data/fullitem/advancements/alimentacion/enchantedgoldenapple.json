@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Enchanted golden apple.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Enchanted golden apple ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:enchanted_golden_apple"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:enchanted_golden_apple"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:alimentacion/enchanted_golden_apple"
+  },
+  "parent": "fullitem:alimentacion/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Jungle sapling.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Jungle sapling ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:jungle_sapling"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:jungle_sapling"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/jungle_sapling"
+  },
+  "parent": "fullitem:decoracion/root"
+}

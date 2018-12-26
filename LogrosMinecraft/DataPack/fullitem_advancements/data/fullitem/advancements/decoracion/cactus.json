@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Cactus.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Cactus ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:cactus"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:cactus"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/cactus"
+  },
+  "parent": "fullitem:decoracion/root"
+}

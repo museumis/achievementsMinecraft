@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Dead tube coral.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Dead tube coral ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:dead_tube_coral"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:dead_tube_coral"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/dead_tube_coral"
+  },
+  "parent": "fullitem:decoracion/root"
+}

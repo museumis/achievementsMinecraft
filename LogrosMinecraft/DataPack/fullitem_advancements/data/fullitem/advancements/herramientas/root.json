@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_axe"
+        },
+        "title": {"translate":"Herramientas"},
+        "description": {"translate":"Obten todos los item de herramientas"},
+        "background": "minecraft:textures/block/dead_tube_coral_block.png",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+	"rewards": {
+		"function": "function:herramientas/root"
+    },		
+       "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+            }
+        }
+    }
+}

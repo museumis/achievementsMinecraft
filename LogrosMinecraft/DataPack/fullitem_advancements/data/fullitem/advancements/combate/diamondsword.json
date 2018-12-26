@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Diamond sword.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Diamond sword ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:diamond_sword"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:diamond_sword"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:combate/diamond_sword"
+  },
+  "parent": "fullitem:combate/root"
+}

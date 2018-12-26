@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Brick stairs.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Brick stairs ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:brick_stairs"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:brick_stairs"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/brick_stairs"
+  },
+  "parent": "fullitem:construccion/root"
+}

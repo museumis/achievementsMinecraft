@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Gray bed.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Gray bed ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:gray_bed"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:gray_bed"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/gray_bed"
+  },
+  "parent": "fullitem:decoracion/root"
+}

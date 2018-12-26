@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Snowball.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Snowball ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:snowball"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:snowball"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/snowball"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Seagrass.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Seagrass ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:seagrass"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:seagrass"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/seagrass"
+  },
+  "parent": "fullitem:decoracion/root"
+}

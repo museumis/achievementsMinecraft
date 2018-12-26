@@ -1,0 +1,40 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Punch II",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Punch II",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:enchanted_book"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions":{
+				"items": [
+					{
+						"enchantments": [
+							{
+								"enchantment": "minecraft:punch",
+								"levels":2
+							}
+						]
+					}
+				]
+			}
+    }
+  },
+  "rewards": {
+    "function": "function:librosencantados/punch-2"
+  },
+  "parent": "fullitem:librosencantados/root"
+}

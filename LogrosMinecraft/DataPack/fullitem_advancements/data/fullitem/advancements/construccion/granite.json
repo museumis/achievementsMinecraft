@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Granite.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Granite ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:granite"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:granite"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/granite"
+  },
+  "parent": "fullitem:construccion/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Lime banner.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Lime banner ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:lime_banner"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:lime_banner"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/lime_banner"
+  },
+  "parent": "fullitem:decoracion/root"
+}

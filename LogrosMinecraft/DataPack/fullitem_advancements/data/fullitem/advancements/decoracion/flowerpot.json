@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Flower pot.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Flower pot ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:flower_pot"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:flower_pot"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/flower_pot"
+  },
+  "parent": "fullitem:decoracion/root"
+}

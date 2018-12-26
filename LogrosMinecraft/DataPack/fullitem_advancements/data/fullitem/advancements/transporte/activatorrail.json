@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Activator rail.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Activator rail ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:activator_rail"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:activator_rail"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:transporte/activator_rail"
+  },
+  "parent": "fullitem:transporte/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Acacia leaves.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Acacia leaves ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:acacia_leaves"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:acacia_leaves"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/acacia_leaves"
+  },
+  "parent": "fullitem:decoracion/root"
+}

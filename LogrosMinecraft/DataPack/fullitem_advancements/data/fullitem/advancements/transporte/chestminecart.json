@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Chest minecart.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Chest minecart ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:chest_minecart"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:chest_minecart"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:transporte/chest_minecart"
+  },
+  "parent": "fullitem:transporte/root"
+}

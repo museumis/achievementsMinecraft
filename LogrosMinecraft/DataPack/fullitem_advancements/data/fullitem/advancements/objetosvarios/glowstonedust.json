@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Glowstone dust.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Glowstone dust ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:glowstone_dust"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:glowstone_dust"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/glowstone_dust"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

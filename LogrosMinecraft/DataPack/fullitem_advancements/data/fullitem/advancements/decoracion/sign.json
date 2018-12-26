@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Sign.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Sign ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:sign"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:sign"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/sign"
+  },
+  "parent": "fullitem:decoracion/root"
+}

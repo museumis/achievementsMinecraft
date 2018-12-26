@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Furnace.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Furnace ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:furnace"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:furnace"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/furnace"
+  },
+  "parent": "fullitem:decoracion/root"
+}

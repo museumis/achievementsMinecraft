@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Light blue terracotta.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Light blue terracotta ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:light_blue_terracotta"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:light_blue_terracotta"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/light_blue_terracotta"
+  },
+  "parent": "fullitem:construccion/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Black concrete.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Black concrete ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:black_concrete"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:black_concrete"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/black_concrete"
+  },
+  "parent": "fullitem:construccion/root"
+}

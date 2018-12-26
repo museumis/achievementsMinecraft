@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Birch pressure plate.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Birch pressure plate ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:birch_pressure_plate"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:birch_pressure_plate"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:redstone/birch_pressure_plate"
+  },
+  "parent": "fullitem:redstone/root"
+}

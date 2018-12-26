@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Observer.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Observer ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:observer"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:observer"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:redstone/observer"
+  },
+  "parent": "fullitem:redstone/root"
+}

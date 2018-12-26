@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Golden horse armor.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Golden horse armor ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:golden_horse_armor"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:golden_horse_armor"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/golden_horse_armor"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

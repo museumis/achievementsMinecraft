@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Map.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Map ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:map"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:map"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/map"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

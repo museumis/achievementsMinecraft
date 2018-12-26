@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Enchanting table.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Enchanting table ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:enchanting_table"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:enchanting_table"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/enchanting_table"
+  },
+  "parent": "fullitem:decoracion/root"
+}

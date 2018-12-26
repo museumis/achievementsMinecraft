@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Melon.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Melon ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:melon"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:melon"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/melon"
+  },
+  "parent": "fullitem:construccion/root"
+}

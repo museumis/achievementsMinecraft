@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Sponge.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Sponge ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:sponge"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:sponge"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/sponge"
+  },
+  "parent": "fullitem:construccion/root"
+}

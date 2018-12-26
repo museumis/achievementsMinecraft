@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Charcoal.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Charcoal ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:charcoal"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:charcoal"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/charcoal"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

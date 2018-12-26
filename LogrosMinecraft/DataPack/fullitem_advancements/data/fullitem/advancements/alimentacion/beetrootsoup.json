@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Beetroot soup.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Beetroot soup ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:beetroot_soup"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:beetroot_soup"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:alimentacion/beetroot_soup"
+  },
+  "parent": "fullitem:alimentacion/root"
+}

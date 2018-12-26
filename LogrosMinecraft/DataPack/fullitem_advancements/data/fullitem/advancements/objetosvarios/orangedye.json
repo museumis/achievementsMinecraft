@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Orange dye.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Orange dye ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:orange_dye"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:orange_dye"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/orange_dye"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Trapped chest.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Trapped chest ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:trapped_chest"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:trapped_chest"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:redstone/trapped_chest"
+  },
+  "parent": "fullitem:redstone/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Spruce button.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Spruce button ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:spruce_button"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:spruce_button"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:redstone/spruce_button"
+  },
+  "parent": "fullitem:redstone/root"
+}

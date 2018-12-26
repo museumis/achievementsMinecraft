@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Apis ore.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Apis ore ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:apis_ore"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:apis_ore"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/apis_ore"
+  },
+  "parent": "fullitem:construccion/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Music disc stal.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Music disc stal ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:music_disc_stal"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:music_disc_stal"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/music_disc_stal"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Yellow glazed terracotta.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Yellow glazed terracotta ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:yellow_glazed_terracotta"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:yellow_glazed_terracotta"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/yellow_glazed_terracotta"
+  },
+  "parent": "fullitem:decoracion/root"
+}

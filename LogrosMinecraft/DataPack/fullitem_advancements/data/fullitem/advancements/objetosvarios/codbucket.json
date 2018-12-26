@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Cod bucket.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Cod bucket ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:cod_bucket"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:cod_bucket"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/cod_bucket"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Spruce planks.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Spruce planks ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:spruce_planks"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:spruce_planks"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/spruce_planks"
+  },
+  "parent": "fullitem:construccion/root"
+}

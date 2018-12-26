@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Orange tulip.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Orange tulip ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:orange_tulip"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:orange_tulip"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/orange_tulip"
+  },
+  "parent": "fullitem:decoracion/root"
+}

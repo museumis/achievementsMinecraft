@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Sugar cane.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Sugar cane ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:sugar_cane"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:sugar_cane"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/sugar_cane"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

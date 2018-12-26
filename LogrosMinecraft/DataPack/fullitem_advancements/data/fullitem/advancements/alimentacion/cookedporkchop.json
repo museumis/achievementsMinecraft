@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Cooked porkchop.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Cooked porkchop ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:cooked_porkchop"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:cooked_porkchop"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:alimentacion/cooked_porkchop"
+  },
+  "parent": "fullitem:alimentacion/root"
+}

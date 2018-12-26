@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Birch stairs.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Birch stairs ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:birch_stairs"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:birch_stairs"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/birch_stairs"
+  },
+  "parent": "fullitem:construccion/root"
+}

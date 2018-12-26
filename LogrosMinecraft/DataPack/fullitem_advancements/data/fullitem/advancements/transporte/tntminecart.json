@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Tnt minecart.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Tnt minecart ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:tnt_minecart"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:tnt_minecart"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:transporte/tnt_minecart"
+  },
+  "parent": "fullitem:transporte/root"
+}

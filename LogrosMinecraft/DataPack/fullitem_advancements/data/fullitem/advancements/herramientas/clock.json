@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Clock.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Clock ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:clock"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:clock"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:herramientas/clock"
+  },
+  "parent": "fullitem:herramientas/root"
+}

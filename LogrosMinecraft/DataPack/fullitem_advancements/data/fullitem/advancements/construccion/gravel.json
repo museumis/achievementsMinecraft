@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Gravel.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Gravel ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:gravel"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:gravel"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/gravel"
+  },
+  "parent": "fullitem:construccion/root"
+}

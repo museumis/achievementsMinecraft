@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Red bed.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Red bed ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:red_bed"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:red_bed"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/red_bed"
+  },
+  "parent": "fullitem:decoracion/root"
+}

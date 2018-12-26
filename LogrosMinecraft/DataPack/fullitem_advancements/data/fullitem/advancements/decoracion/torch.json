@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Torch.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Torch ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:torch"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:torch"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/torch"
+  },
+  "parent": "fullitem:decoracion/root"
+}

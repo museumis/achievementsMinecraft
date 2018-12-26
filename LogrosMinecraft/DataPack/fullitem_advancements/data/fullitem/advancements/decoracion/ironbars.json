@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Iron bars.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Iron bars ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:iron_bars"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:iron_bars"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/iron_bars"
+  },
+  "parent": "fullitem:decoracion/root"
+}

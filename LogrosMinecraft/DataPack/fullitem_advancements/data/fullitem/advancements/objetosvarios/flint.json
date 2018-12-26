@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Flint.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Flint ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:flint"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:flint"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/flint"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

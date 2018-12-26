@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Oak boat.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Oak boat ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:oak_boat"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:oak_boat"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:transporte/oak_boat"
+  },
+  "parent": "fullitem:transporte/root"
+}

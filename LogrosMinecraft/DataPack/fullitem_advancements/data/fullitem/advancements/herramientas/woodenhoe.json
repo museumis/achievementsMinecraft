@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Wooden hoe.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Wooden hoe ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:wooden_hoe"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:wooden_hoe"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:herramientas/wooden_hoe"
+  },
+  "parent": "fullitem:herramientas/root"
+}

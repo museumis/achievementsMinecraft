@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Prismarine slab.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Prismarine slab ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:prismarine_slab"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:prismarine_slab"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/prismarine_slab"
+  },
+  "parent": "fullitem:construccion/root"
+}

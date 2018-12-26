@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Sandstone slab.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Sandstone slab ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:sandstone_slab"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:sandstone_slab"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/sandstone_slab"
+  },
+  "parent": "fullitem:construccion/root"
+}

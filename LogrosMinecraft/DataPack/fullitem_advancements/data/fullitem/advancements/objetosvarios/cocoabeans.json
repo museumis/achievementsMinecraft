@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Cocoa beans.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Cocoa beans ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:cocoa_beans"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:cocoa_beans"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/cocoa_beans"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Snow block.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Snow block ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:snow_block"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:snow_block"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/snow_block"
+  },
+  "parent": "fullitem:construccion/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Music disc far.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Music disc far ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:music_disc_far"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:music_disc_far"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/music_disc_far"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

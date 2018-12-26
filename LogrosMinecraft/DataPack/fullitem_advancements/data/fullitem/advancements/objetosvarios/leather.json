@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Leather.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Leather ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:leather"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:leather"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/leather"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

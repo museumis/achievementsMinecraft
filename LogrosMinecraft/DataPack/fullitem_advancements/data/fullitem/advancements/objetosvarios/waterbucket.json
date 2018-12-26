@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Water bucket.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Water bucket ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:water_bucket"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:water_bucket"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/water_bucket"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

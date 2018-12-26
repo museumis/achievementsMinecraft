@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Golden axe.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Golden axe ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:golden_axe"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:golden_axe"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:herramientas/golden_axe"
+  },
+  "parent": "fullitem:herramientas/root"
+}

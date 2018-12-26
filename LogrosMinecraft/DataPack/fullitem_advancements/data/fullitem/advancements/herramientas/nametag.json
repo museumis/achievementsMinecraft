@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Name tag.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Name tag ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:name_tag"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:name_tag"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:herramientas/name_tag"
+  },
+  "parent": "fullitem:herramientas/root"
+}

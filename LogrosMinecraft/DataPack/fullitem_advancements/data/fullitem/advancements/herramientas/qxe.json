@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Qxe.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Qxe ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:qxe"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:qxe"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:herramientas/qxe"
+  },
+  "parent": "fullitem:herramientas/root"
+}

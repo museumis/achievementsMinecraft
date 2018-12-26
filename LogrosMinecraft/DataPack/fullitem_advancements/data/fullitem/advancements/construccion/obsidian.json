@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Obsidian.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Obsidian ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:obsidian"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:obsidian"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/obsidian"
+  },
+  "parent": "fullitem:construccion/root"
+}

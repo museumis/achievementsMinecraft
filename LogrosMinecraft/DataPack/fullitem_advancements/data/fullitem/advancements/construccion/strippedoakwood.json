@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Stripped oak wood.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Stripped oak wood ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:stripped_oak_wood"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:stripped_oak_wood"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/stripped_oak_wood"
+  },
+  "parent": "fullitem:construccion/root"
+}

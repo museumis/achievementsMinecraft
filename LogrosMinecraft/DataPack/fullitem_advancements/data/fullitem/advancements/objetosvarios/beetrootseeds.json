@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Beetroot seeds.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Beetroot seeds ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:beetroot_seeds"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:beetroot_seeds"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/beetroot_seeds"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

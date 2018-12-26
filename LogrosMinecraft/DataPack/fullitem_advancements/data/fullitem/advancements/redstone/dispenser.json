@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Dispenser.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Dispenser ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:dispenser"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:dispenser"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:redstone/dispenser"
+  },
+  "parent": "fullitem:redstone/root"
+}

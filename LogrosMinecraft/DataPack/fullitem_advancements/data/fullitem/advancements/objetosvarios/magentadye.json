@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Magenta dye.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Magenta dye ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:magenta_dye"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:magenta_dye"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/magenta_dye"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

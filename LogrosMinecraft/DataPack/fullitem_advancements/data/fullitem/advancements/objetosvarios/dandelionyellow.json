@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Dandelion yellow.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Dandelion yellow ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:dandelion_yellow"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:dandelion_yellow"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/dandelion_yellow"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

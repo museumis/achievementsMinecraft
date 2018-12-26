@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Stripped spruce log.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Stripped spruce log ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:stripped_spruce_log"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:stripped_spruce_log"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/stripped_spruce_log"
+  },
+  "parent": "fullitem:construccion/root"
+}

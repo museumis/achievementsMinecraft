@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Heavy weighted pressure plate.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Heavy weighted pressure plate ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:heavy_weighted_pressure_plate"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:heavy_weighted_pressure_plate"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:redstone/heavy_weighted_pressure_plate"
+  },
+  "parent": "fullitem:redstone/root"
+}

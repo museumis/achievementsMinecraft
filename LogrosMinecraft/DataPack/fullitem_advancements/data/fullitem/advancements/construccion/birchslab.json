@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Birch slab.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Birch slab ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:birch_slab"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:birch_slab"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/birch_slab"
+  },
+  "parent": "fullitem:construccion/root"
+}

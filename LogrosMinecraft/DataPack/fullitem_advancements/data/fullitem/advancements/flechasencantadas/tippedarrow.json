@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Tipped arrow.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Tipped arrow ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:tipped_arrow"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:tipped_arrow"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:flechasencantadas/tipped_arrow"
+  },
+  "parent": "fullitem:flechasencantadas/root"
+}

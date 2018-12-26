@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Red banner.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Red banner ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:red_banner"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:red_banner"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/red_banner"
+  },
+  "parent": "fullitem:decoracion/root"
+}

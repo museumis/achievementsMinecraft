@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Black stained glass.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Black stained glass ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:black_stained_glass"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:black_stained_glass"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/black_stained_glass"
+  },
+  "parent": "fullitem:construccion/root"
+}

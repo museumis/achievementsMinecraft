@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Lily pad.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Lily pad ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:lily_pad"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:lily_pad"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/lily_pad"
+  },
+  "parent": "fullitem:decoracion/root"
+}

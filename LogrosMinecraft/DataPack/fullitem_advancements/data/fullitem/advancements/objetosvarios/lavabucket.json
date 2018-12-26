@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Lava bucket.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Lava bucket ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:lava_bucket"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:lava_bucket"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/lava_bucket"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

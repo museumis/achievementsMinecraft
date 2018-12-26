@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Music disc wait.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Music disc wait ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:music_disc_wait"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:music_disc_wait"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/music_disc_wait"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

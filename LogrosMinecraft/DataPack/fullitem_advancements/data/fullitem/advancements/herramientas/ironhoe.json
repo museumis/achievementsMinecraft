@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Iron hoe.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Iron hoe ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:iron_hoe"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:iron_hoe"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:herramientas/iron_hoe"
+  },
+  "parent": "fullitem:herramientas/root"
+}

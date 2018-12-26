@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Anvil.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Anvil ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:anvil"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:anvil"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/anvil"
+  },
+  "parent": "fullitem:decoracion/root"
+}

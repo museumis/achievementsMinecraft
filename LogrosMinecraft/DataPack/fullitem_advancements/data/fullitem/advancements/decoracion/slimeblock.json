@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Slime block.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Slime block ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:slime_block"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:slime_block"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/slime_block"
+  },
+  "parent": "fullitem:decoracion/root"
+}

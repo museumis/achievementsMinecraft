@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Chicken.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Chicken ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:chicken"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:chicken"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:alimentacion/chicken"
+  },
+  "parent": "fullitem:alimentacion/root"
+}

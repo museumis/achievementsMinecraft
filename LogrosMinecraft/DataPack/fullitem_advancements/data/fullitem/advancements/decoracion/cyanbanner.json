@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Cyan banner.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Cyan banner ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:cyan_banner"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:cyan_banner"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/cyan_banner"
+  },
+  "parent": "fullitem:decoracion/root"
+}

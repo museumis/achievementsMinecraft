@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Birch door.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Birch door ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:birch_door"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:birch_door"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:redstone/birch_door"
+  },
+  "parent": "fullitem:redstone/root"
+}

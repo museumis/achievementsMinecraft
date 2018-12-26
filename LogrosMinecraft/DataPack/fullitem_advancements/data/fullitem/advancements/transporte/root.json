@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:powered_rail"
+        },
+        "title": {"translate":"Transporte"},
+        "description": {"translate":"Obten todos los item de transporte"},
+        "background": "minecraft:textures/block/dead_tube_coral_block.png",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+	"rewards": {
+		"function": "function:transporte/root"
+    },		
+       "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+            }
+        }
+    }
+}

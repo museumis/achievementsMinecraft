@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Chai1nmail leggings.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Chai1nmail leggings ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:chai1nmail_leggings"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:chai1nmail_leggings"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:combate/chai1nmail_leggings"
+  },
+  "parent": "fullitem:combate/root"
+}

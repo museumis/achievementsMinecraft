@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Flint and steel.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Flint and steel ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:flint_and_steel"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:flint_and_steel"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:herramientas/flint_and_steel"
+  },
+  "parent": "fullitem:herramientas/root"
+}

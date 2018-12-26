@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Ink sac.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Ink sac ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:ink_sac"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:ink_sac"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/ink_sac"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

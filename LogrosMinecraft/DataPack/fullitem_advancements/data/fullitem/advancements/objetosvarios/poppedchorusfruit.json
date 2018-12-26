@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Popped chorus fruit.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Popped chorus fruit ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:popped_chorus_fruit"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:popped_chorus_fruit"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/popped_chorus_fruit"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

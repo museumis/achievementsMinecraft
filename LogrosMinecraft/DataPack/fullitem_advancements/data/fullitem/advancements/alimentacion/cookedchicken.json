@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Cooked chicken.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Cooked chicken ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:cooked_chicken"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:cooked_chicken"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:alimentacion/cooked_chicken"
+  },
+  "parent": "fullitem:alimentacion/root"
+}

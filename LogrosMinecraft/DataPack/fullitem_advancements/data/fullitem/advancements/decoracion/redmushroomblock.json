@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Red mushroom block.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Red mushroom block ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:red_mushroom_block"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:red_mushroom_block"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/red_mushroom_block"
+  },
+  "parent": "fullitem:decoracion/root"
+}

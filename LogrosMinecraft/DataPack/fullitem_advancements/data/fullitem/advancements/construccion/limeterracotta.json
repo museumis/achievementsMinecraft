@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Lime terracotta.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Lime terracotta ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:lime_terracotta"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:lime_terracotta"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/lime_terracotta"
+  },
+  "parent": "fullitem:construccion/root"
+}

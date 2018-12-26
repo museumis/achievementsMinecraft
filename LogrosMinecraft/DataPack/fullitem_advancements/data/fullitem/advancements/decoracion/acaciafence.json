@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Acacia fence.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Acacia fence ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:acacia_fence"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:acacia_fence"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/acacia_fence"
+  },
+  "parent": "fullitem:decoracion/root"
+}

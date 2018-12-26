@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Iron boots.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Iron boots ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:iron_boots"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:iron_boots"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:combate/iron_boots"
+  },
+  "parent": "fullitem:combate/root"
+}

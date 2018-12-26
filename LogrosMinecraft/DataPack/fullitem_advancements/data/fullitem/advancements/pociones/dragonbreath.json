@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Dragon breath.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Dragon breath ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:dragon_breath"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:dragon_breath"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:pociones/dragon_breath"
+  },
+  "parent": "fullitem:pociones/root"
+}

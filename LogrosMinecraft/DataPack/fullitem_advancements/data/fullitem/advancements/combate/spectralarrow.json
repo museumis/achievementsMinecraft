@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Spectral arrow.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Spectral arrow ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:spectral_arrow"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:spectral_arrow"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:combate/spectral_arrow"
+  },
+  "parent": "fullitem:combate/root"
+}

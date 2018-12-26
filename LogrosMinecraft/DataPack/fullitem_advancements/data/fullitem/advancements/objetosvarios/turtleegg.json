@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Turtle egg.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Turtle egg ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:turtle_egg"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:turtle_egg"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/turtle_egg"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

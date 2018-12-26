@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido White concrete.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " White concrete ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:white_concrete"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:white_concrete"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/white_concrete"
+  },
+  "parent": "fullitem:construccion/root"
+}

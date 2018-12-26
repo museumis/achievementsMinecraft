@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Melon seeds.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Melon seeds ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:melon_seeds"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:melon_seeds"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/melon_seeds"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

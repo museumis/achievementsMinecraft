@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Cooked cod.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Cooked cod ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:cooked_cod"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:cooked_cod"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:alimentacion/cooked_cod"
+  },
+  "parent": "fullitem:alimentacion/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Spruce fence.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Spruce fence ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:spruce_fence"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:spruce_fence"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/spruce_fence"
+  },
+  "parent": "fullitem:decoracion/root"
+}

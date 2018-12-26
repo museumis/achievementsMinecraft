@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Horn coral fan.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Horn coral fan ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:horn_coral_fan"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:horn_coral_fan"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/horn_coral_fan"
+  },
+  "parent": "fullitem:decoracion/root"
+}

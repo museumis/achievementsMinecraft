@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Fire coral fan.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Fire coral fan ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:fire_coral_fan"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:fire_coral_fan"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/fire_coral_fan"
+  },
+  "parent": "fullitem:decoracion/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Grass.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Grass ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:grass"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:grass"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/grass"
+  },
+  "parent": "fullitem:decoracion/root"
+}

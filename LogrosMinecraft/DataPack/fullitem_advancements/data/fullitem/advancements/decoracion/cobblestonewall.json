@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Cobblestone wall.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Cobblestone wall ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:cobblestone_wall"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:cobblestone_wall"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/cobblestone_wall"
+  },
+  "parent": "fullitem:decoracion/root"
+}

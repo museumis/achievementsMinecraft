@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Oak planks.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Oak planks ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:oak_planks"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:oak_planks"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/oak_planks"
+  },
+  "parent": "fullitem:construccion/root"
+}

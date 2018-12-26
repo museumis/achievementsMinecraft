@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Diorite.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Diorite ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:diorite"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:diorite"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/diorite"
+  },
+  "parent": "fullitem:construccion/root"
+}

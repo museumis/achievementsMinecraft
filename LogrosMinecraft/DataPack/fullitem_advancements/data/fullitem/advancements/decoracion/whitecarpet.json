@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido White carpet.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " White carpet ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:white_carpet"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:white_carpet"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/white_carpet"
+  },
+  "parent": "fullitem:decoracion/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Green bed.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Green bed ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:green_bed"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:green_bed"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/green_bed"
+  },
+  "parent": "fullitem:decoracion/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Light gray bed.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Light gray bed ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:light_gray_bed"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:light_gray_bed"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/light_gray_bed"
+  },
+  "parent": "fullitem:decoracion/root"
+}

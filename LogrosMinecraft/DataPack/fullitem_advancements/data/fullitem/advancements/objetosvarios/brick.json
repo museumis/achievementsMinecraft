@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Brick.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Brick ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:brick"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:brick"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/brick"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

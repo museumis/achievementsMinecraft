@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Rabbit hide.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Rabbit hide ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:rabbit_hide"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:rabbit_hide"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/rabbit_hide"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Leather boots.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Leather boots ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:leather_boots"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:leather_boots"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:combate/leather_boots"
+  },
+  "parent": "fullitem:combate/root"
+}

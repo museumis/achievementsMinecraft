@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Red sandstone.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Red sandstone ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:red_sandstone"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:red_sandstone"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/red_sandstone"
+  },
+  "parent": "fullitem:construccion/root"
+}

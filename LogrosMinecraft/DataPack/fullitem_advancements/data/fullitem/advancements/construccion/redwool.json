@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Red wool.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Red wool ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:red_wool"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:red_wool"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/red_wool"
+  },
+  "parent": "fullitem:construccion/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Cake.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Cake ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:cake"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:cake"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:alimentacion/cake"
+  },
+  "parent": "fullitem:alimentacion/root"
+}

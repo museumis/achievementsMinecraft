@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido White wool.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " White wool ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:white_wool"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:white_wool"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/white_wool"
+  },
+  "parent": "fullitem:construccion/root"
+}

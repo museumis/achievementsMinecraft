@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Yellow wool.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Yellow wool ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:yellow_wool"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:yellow_wool"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/yellow_wool"
+  },
+  "parent": "fullitem:construccion/root"
+}

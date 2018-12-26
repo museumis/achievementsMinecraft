@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Bone meal.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Bone meal ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:bone_meal"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:bone_meal"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/bone_meal"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

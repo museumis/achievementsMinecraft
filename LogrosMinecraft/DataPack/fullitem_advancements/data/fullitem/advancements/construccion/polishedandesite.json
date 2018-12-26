@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Polished andesite.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Polished andesite ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:polished_andesite"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:polished_andesite"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/polished_andesite"
+  },
+  "parent": "fullitem:construccion/root"
+}

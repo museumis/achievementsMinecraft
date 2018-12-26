@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Jack o lantern.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Jack o lantern ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:jack_o_lantern"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:jack_o_lantern"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/jack_o_lantern"
+  },
+  "parent": "fullitem:construccion/root"
+}

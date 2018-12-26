@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Quartz stairs.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Quartz stairs ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:quartz_stairs"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:quartz_stairs"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/quartz_stairs"
+  },
+  "parent": "fullitem:construccion/root"
+}

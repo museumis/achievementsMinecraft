@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Lime concrete powder.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Lime concrete powder ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:lime_concrete_powder"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:lime_concrete_powder"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/lime_concrete_powder"
+  },
+  "parent": "fullitem:construccion/root"
+}

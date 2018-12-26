@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Iron door.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Iron door ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:iron_door"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:iron_door"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:redstone/iron_door"
+  },
+  "parent": "fullitem:redstone/root"
+}

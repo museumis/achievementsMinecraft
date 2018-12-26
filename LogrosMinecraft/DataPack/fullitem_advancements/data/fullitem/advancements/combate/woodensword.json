@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Wooden sword.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Wooden sword ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:wooden_sword"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:wooden_sword"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:combate/wooden_sword"
+  },
+  "parent": "fullitem:combate/root"
+}

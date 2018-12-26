@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Cobweb.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Cobweb ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:cobweb"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:cobweb"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/cobweb"
+  },
+  "parent": "fullitem:decoracion/root"
+}

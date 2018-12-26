@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Paper.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Paper ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:paper"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:paper"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/paper"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Saddle.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Saddle ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:saddle"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:saddle"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:transporte/saddle"
+  },
+  "parent": "fullitem:transporte/root"
+}

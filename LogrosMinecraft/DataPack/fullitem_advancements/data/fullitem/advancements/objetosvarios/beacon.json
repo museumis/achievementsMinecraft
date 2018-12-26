@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Beacon.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Beacon ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:beacon"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:beacon"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/beacon"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

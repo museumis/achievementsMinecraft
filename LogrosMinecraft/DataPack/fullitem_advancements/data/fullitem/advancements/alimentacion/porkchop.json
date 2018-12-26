@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Porkchop.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Porkchop ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:porkchop"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:porkchop"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:alimentacion/porkchop"
+  },
+  "parent": "fullitem:alimentacion/root"
+}

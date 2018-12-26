@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Wooden axe.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Wooden axe ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:wooden_axe"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:wooden_axe"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:herramientas/wooden_axe"
+  },
+  "parent": "fullitem:herramientas/root"
+}

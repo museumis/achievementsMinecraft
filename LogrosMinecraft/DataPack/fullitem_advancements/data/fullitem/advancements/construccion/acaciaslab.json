@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Acacia slab.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Acacia slab ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:acacia_slab"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:acacia_slab"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/acacia_slab"
+  },
+  "parent": "fullitem:construccion/root"
+}

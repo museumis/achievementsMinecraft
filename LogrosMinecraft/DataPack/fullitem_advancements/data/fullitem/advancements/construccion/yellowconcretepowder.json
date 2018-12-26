@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Yellow concrete powder.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Yellow concrete powder ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:yellow_concrete_powder"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:yellow_concrete_powder"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/yellow_concrete_powder"
+  },
+  "parent": "fullitem:construccion/root"
+}

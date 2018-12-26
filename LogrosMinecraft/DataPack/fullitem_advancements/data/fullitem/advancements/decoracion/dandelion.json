@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Dandelion.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Dandelion ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:dandelion"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:dandelion"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/dandelion"
+  },
+  "parent": "fullitem:decoracion/root"
+}

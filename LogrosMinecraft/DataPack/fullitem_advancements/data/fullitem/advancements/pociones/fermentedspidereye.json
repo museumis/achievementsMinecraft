@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Fermented spider eye.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Fermented spider eye ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:fermented_spider_eye"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:fermented_spider_eye"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:pociones/fermented_spider_eye"
+  },
+  "parent": "fullitem:pociones/root"
+}

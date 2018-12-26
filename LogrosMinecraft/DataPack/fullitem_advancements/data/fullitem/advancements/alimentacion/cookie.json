@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Cookie.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Cookie ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:cookie"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:cookie"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:alimentacion/cookie"
+  },
+  "parent": "fullitem:alimentacion/root"
+}

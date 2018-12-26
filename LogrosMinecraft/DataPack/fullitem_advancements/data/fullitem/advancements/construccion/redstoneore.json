@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Redstone ore.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Redstone ore ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:redstone_ore"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:redstone_ore"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/redstone_ore"
+  },
+  "parent": "fullitem:construccion/root"
+}

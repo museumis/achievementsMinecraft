@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Shield.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Shield ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:shield"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:shield"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:combate/shield"
+  },
+  "parent": "fullitem:combate/root"
+}

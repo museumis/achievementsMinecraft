@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Egg.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Egg ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:egg"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:egg"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/egg"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

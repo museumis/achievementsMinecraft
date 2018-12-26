@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Green banner.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Green banner ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:green_banner"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:green_banner"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/green_banner"
+  },
+  "parent": "fullitem:decoracion/root"
+}

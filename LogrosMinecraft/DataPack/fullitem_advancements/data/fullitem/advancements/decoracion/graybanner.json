@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Gray banner.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Gray banner ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:gray_banner"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:gray_banner"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/gray_banner"
+  },
+  "parent": "fullitem:decoracion/root"
+}

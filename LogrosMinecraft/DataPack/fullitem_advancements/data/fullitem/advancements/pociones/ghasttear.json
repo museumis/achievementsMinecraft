@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Ghast tear.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Ghast tear ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:ghast_tear"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:ghast_tear"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:pociones/ghast_tear"
+  },
+  "parent": "fullitem:pociones/root"
+}

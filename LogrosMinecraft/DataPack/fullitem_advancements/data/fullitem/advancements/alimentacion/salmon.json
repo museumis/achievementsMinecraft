@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Salmon.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Salmon ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:salmon"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:salmon"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:alimentacion/salmon"
+  },
+  "parent": "fullitem:alimentacion/root"
+}

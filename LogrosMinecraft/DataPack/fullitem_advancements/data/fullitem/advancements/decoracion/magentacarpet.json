@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Magenta carpet.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Magenta carpet ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:magenta_carpet"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:magenta_carpet"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/magenta_carpet"
+  },
+  "parent": "fullitem:decoracion/root"
+}

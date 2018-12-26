@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Stone shovel.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Stone shovel ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:stone_shovel"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:stone_shovel"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:herramientas/stone_shovel"
+  },
+  "parent": "fullitem:herramientas/root"
+}

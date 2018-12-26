@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Milk bucket.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Milk bucket ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:milk_bucket"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:milk_bucket"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/milk_bucket"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

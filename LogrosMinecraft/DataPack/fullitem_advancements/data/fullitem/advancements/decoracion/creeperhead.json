@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Creeper head.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Creeper head ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:creeper_head"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:creeper_head"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/creeper_head"
+  },
+  "parent": "fullitem:decoracion/root"
+}

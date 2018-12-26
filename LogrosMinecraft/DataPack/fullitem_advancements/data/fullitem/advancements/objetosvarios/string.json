@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido String.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " String ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:string"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:string"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/string"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

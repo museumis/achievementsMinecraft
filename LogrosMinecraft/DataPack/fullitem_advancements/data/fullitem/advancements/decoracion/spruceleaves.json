@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Spruce leaves.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Spruce leaves ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:spruce_leaves"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:spruce_leaves"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/spruce_leaves"
+  },
+  "parent": "fullitem:decoracion/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Pink dye.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Pink dye ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:pink_dye"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:pink_dye"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/pink_dye"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

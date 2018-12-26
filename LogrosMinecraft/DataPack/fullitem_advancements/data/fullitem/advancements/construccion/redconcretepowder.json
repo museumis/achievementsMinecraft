@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Red concrete powder.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Red concrete powder ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:red_concrete_powder"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:red_concrete_powder"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/red_concrete_powder"
+  },
+  "parent": "fullitem:construccion/root"
+}

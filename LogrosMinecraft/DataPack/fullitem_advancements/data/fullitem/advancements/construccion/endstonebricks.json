@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido End stone bricks.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " End stone bricks ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:end_stone_bricks"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:end_stone_bricks"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/end_stone_bricks"
+  },
+  "parent": "fullitem:construccion/root"
+}

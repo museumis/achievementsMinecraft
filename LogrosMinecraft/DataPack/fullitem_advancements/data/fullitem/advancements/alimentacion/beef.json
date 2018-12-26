@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Bee121f.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Bee121f ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:bee121f"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:bee121f"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:alimentacion/bee121f"
+  },
+  "parent": "fullitem:alimentacion/root"
+}

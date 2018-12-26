@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Iron ingot.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Iron ingot ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:iron_ingot"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:iron_ingot"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/iron_ingot"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

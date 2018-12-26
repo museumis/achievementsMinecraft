@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Wet sponge.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Wet sponge ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:wet_sponge"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:wet_sponge"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/wet_sponge"
+  },
+  "parent": "fullitem:construccion/root"
+}

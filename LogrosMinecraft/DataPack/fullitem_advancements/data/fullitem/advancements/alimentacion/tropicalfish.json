@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Tropical fish.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Tropical fish ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:tropical_fish"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:tropical_fish"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:alimentacion/tropical_fish"
+  },
+  "parent": "fullitem:alimentacion/root"
+}

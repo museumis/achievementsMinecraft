@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Sticky piston.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Sticky piston ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:sticky_piston"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:sticky_piston"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:redstone/sticky_piston"
+  },
+  "parent": "fullitem:redstone/root"
+}

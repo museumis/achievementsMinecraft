@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Conduit.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Conduit ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:conduit"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:conduit"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/conduit"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

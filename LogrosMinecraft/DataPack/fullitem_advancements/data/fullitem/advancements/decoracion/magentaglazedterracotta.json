@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Magenta glazed terracotta.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Magenta glazed terracotta ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:magenta_glazed_terracotta"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:magenta_glazed_terracotta"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/magenta_glazed_terracotta"
+  },
+  "parent": "fullitem:decoracion/root"
+}

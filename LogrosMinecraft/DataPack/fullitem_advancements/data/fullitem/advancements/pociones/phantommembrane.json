@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Phantom membrane.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Phantom membrane ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:phantom_membrane"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:phantom_membrane"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:pociones/phantom_membrane"
+  },
+  "parent": "fullitem:pociones/root"
+}

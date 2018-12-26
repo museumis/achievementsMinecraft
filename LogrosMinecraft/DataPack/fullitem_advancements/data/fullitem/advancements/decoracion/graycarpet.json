@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Gray carpet.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Gray carpet ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:gray_carpet"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:gray_carpet"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/gray_carpet"
+  },
+  "parent": "fullitem:decoracion/root"
+}

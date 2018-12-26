@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Jungle leaves.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Jungle leaves ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:jungle_leaves"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:jungle_leaves"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/jungle_leaves"
+  },
+  "parent": "fullitem:decoracion/root"
+}

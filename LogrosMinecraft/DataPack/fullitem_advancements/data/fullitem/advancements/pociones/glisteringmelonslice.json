@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Glistering melon slice.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Glistering melon slice ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:glistering_melon_slice"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:glistering_melon_slice"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:pociones/glistering_melon_slice"
+  },
+  "parent": "fullitem:pociones/root"
+}

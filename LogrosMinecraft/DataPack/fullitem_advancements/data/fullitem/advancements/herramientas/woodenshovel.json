@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Wooden shovel.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Wooden shovel ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:wooden_shovel"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:wooden_shovel"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:herramientas/wooden_shovel"
+  },
+  "parent": "fullitem:herramientas/root"
+}

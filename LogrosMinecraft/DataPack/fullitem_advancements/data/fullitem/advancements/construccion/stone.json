@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Stone.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Stone ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:stone"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:stone"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/stone"
+  },
+  "parent": "fullitem:construccion/root"
+}

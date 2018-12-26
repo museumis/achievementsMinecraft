@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Bread.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Bread ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:bread"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:bread"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:alimentacion/bread"
+  },
+  "parent": "fullitem:alimentacion/root"
+}

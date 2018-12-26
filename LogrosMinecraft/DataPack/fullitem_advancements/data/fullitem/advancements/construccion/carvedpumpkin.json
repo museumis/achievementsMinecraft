@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Carved pumpkin.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Carved pumpkin ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:carved_pumpkin"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:carved_pumpkin"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/carved_pumpkin"
+  },
+  "parent": "fullitem:construccion/root"
+}

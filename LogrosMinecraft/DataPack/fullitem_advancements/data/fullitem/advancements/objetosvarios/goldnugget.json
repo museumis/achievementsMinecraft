@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Gold nugget.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Gold nugget ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:gold_nugget"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:gold_nugget"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/gold_nugget"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

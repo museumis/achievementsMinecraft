@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Spruce trapdoor.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Spruce trapdoor ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:spruce_trapdoor"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:spruce_trapdoor"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:redstone/spruce_trapdoor"
+  },
+  "parent": "fullitem:redstone/root"
+}

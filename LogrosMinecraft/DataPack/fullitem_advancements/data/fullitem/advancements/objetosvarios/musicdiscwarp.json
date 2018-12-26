@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Music disc warp.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Music disc warp ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:music_disc_warp"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:music_disc_warp"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/music_disc_warp"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

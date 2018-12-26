@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Cobblestone stairs.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Cobblestone stairs ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:cobblestone_stairs"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:cobblestone_stairs"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/cobblestone_stairs"
+  },
+  "parent": "fullitem:construccion/root"
+}

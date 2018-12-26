@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Totem of undying.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Totem of undying ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:totem_of_undying"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:totem_of_undying"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:combate/totem_of_undying"
+  },
+  "parent": "fullitem:combate/root"
+}

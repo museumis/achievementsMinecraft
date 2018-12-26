@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Azure bluet.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Azure bluet ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:azure_bluet"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:azure_bluet"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/azure_bluet"
+  },
+  "parent": "fullitem:decoracion/root"
+}

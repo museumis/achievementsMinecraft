@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Light gray stained glass pane.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Light gray stained glass pane ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:light_gray_stained_glass_pane"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:light_gray_stained_glass_pane"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/light_gray_stained_glass_pane"
+  },
+  "parent": "fullitem:decoracion/root"
+}

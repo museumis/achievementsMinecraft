@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Sand.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Sand ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:sand"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:sand"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/sand"
+  },
+  "parent": "fullitem:construccion/root"
+}

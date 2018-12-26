@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido End stone.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " End stone ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:end_stone"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:end_stone"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/end_stone"
+  },
+  "parent": "fullitem:construccion/root"
+}

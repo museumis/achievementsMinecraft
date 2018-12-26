@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Jungle fence gate.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Jungle fence gate ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:jungle_fence_gate"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:jungle_fence_gate"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:redstone/jungle_fence_gate"
+  },
+  "parent": "fullitem:redstone/root"
+}

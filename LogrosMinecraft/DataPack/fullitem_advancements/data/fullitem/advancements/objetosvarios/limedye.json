@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Lime dye.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Lime dye ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:lime_dye"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:lime_dye"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/lime_dye"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

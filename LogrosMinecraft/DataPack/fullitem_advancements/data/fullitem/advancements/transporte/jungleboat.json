@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Jungle boat.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Jungle boat ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:jungle_boat"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:jungle_boat"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:transporte/jungle_boat"
+  },
+  "parent": "fullitem:transporte/root"
+}

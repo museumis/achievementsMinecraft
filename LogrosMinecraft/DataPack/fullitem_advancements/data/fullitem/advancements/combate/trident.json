@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Trident.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Trident ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:trident"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:trident"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:combate/trident"
+  },
+  "parent": "fullitem:combate/root"
+}

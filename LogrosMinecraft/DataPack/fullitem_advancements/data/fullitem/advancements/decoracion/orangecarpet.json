@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Orange carpet.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Orange carpet ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:orange_carpet"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:orange_carpet"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/orange_carpet"
+  },
+  "parent": "fullitem:decoracion/root"
+}

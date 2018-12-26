@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Stone sword.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Stone sword ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:stone_sword"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:stone_sword"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:combate/stone_sword"
+  },
+  "parent": "fullitem:combate/root"
+}

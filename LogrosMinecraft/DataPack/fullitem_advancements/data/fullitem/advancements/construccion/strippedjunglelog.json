@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Stripped jungle log.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Stripped jungle log ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:stripped_jungle_log"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:stripped_jungle_log"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/stripped_jungle_log"
+  },
+  "parent": "fullitem:construccion/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Wheat.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Wheat ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:wheat"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:wheat"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/wheat"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

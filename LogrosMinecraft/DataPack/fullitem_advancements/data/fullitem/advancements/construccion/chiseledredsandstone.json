@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Chiseled red sandstone.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Chiseled red sandstone ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:chiseled_red_sandstone"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:chiseled_red_sandstone"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/chiseled_red_sandstone"
+  },
+  "parent": "fullitem:construccion/root"
+}

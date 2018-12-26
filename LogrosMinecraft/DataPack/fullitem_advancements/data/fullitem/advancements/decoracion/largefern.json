@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Large fern.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Large fern ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:large_fern"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:large_fern"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/large_fern"
+  },
+  "parent": "fullitem:decoracion/root"
+}

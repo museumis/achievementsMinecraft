@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Cooked mutton.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Cooked mutton ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:cooked_mutton"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:cooked_mutton"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:alimentacion/cooked_mutton"
+  },
+  "parent": "fullitem:alimentacion/root"
+}

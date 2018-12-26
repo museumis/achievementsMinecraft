@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Tall grass.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Tall grass ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:tall_grass"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:tall_grass"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/tall_grass"
+  },
+  "parent": "fullitem:decoracion/root"
+}

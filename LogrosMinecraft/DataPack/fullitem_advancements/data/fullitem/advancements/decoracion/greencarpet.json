@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Green carpet.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Green carpet ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:green_carpet"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:green_carpet"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/green_carpet"
+  },
+  "parent": "fullitem:decoracion/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Brown shulker box.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Brown shulker box ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:brown_shulker_box"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:brown_shulker_box"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/brown_shulker_box"
+  },
+  "parent": "fullitem:decoracion/root"
+}

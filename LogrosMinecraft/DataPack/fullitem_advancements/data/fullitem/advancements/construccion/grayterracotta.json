@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Gray terracotta.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Gray terracotta ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:gray_terracotta"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:gray_terracotta"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/gray_terracotta"
+  },
+  "parent": "fullitem:construccion/root"
+}

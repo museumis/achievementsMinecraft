@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Diamond leggings.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Diamond leggings ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:diamond_leggings"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:diamond_leggings"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:combate/diamond_leggings"
+  },
+  "parent": "fullitem:combate/root"
+}

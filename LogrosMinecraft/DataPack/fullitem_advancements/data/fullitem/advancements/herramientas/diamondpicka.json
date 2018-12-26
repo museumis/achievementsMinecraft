@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Diamond picka.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Diamond picka ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:diamond_picka"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:diamond_picka"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:herramientas/diamond_picka"
+  },
+  "parent": "fullitem:herramientas/root"
+}

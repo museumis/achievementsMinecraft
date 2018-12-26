@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Cobblestone slab.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Cobblestone slab ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:cobblestone_slab"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:cobblestone_slab"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/cobblestone_slab"
+  },
+  "parent": "fullitem:construccion/root"
+}

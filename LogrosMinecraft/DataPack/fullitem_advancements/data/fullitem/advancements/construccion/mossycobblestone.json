@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Mossy cobblestone.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Mossy cobblestone ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:mossy_cobblestone"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:mossy_cobblestone"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/mossy_cobblestone"
+  },
+  "parent": "fullitem:construccion/root"
+}

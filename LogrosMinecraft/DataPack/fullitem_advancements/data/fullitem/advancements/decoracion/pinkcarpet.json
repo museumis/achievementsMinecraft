@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Pink carpet.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Pink carpet ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:pink_carpet"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:pink_carpet"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/pink_carpet"
+  },
+  "parent": "fullitem:decoracion/root"
+}

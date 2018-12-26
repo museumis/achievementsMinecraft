@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Oak slab.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Oak slab ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:oak_slab"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:oak_slab"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/oak_slab"
+  },
+  "parent": "fullitem:construccion/root"
+}

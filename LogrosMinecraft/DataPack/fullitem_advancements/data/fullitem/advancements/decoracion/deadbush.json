@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Dead bush.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Dead bush ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:dead_bush"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:dead_bush"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/dead_bush"
+  },
+  "parent": "fullitem:decoracion/root"
+}

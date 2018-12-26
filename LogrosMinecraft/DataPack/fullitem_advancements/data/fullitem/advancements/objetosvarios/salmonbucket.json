@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Salmon bucket.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Salmon bucket ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:salmon_bucket"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:salmon_bucket"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/salmon_bucket"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

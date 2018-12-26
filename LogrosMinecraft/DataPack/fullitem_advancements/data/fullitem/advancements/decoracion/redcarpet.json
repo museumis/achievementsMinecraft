@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Red carpet.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Red carpet ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:red_carpet"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:red_carpet"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/red_carpet"
+  },
+  "parent": "fullitem:decoracion/root"
+}

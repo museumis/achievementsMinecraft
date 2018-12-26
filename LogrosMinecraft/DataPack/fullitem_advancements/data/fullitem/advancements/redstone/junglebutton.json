@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Jungle button.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Jungle button ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:jungle_button"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:jungle_button"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:redstone/jungle_button"
+  },
+  "parent": "fullitem:redstone/root"
+}

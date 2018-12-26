@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Red sandstone stairs.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Red sandstone stairs ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:red_sandstone_stairs"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:red_sandstone_stairs"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/red_sandstone_stairs"
+  },
+  "parent": "fullitem:construccion/root"
+}

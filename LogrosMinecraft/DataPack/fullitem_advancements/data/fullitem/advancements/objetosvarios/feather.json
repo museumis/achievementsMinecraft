@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Feather.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Feather ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:feather"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:feather"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:objetosvarios/feather"
+  },
+  "parent": "fullitem:objetosvarios/root"
+}

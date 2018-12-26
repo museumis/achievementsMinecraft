@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Cut red sandstone.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Cut red sandstone ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:cut_red_sandstone"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:cut_red_sandstone"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/cut_red_sandstone"
+  },
+  "parent": "fullitem:construccion/root"
+}

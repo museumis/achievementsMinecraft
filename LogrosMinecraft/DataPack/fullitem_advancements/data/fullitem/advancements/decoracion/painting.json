@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Painting.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Painting ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:painting"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:painting"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/painting"
+  },
+  "parent": "fullitem:decoracion/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Spruce log.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Spruce log ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:spruce_log"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:spruce_log"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/spruce_log"
+  },
+  "parent": "fullitem:construccion/root"
+}

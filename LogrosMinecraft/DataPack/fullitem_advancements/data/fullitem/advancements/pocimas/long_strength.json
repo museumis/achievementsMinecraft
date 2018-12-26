@@ -1,0 +1,31 @@
+{
+  "display": {
+    "description": {
+      "text": "Has elaborado Long strength.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Long strength ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:brewing_stand"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+    "criteria": {
+        "potion": {
+            "trigger": "minecraft:brewed_potion",
+            "conditions": {
+                "potion": "minecraft:long_strength"
+            }
+        }
+    },
+  "rewards": {
+    "function": "function:pocimas/potion"
+  },
+  "parent": "fullitem:pocimas/root"
+}

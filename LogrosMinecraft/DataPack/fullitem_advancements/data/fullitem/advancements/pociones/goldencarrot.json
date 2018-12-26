@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Golden carrot.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Golden carrot ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:golden_carrot"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:golden_carrot"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:pociones/golden_carrot"
+  },
+  "parent": "fullitem:pociones/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Lead.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Lead ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:lead"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:lead"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:herramientas/lead"
+  },
+  "parent": "fullitem:herramientas/root"
+}

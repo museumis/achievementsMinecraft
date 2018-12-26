@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Magenta concrete.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Magenta concrete ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:magenta_concrete"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:magenta_concrete"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/magenta_concrete"
+  },
+  "parent": "fullitem:construccion/root"
+}

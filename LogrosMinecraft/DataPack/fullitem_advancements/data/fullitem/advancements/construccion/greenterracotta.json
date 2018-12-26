@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Green terracotta.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Green terracotta ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:green_terracotta"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:green_terracotta"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:construccion/green_terracotta"
+  },
+  "parent": "fullitem:construccion/root"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Light blue bed.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Light blue bed ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:light_blue_bed"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:light_blue_bed"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/light_blue_bed"
+  },
+  "parent": "fullitem:decoracion/root"
+}

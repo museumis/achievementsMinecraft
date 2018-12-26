@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Armor stand.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Armor stand ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:armor_stand"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:armor_stand"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:decoracion/armor_stand"
+  },
+  "parent": "fullitem:decoracion/root"
+}

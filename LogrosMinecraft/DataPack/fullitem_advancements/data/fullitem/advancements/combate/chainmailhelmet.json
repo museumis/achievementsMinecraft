@@ -1,0 +1,35 @@
+{
+  "display": {
+    "description": {
+      "text": "Has obtenido Chainmail helmet.",
+      "color": "yellow"
+    },
+    "title": {
+      "text": " Chainmail helmet ",
+      "color": "white"
+    },
+    "icon": {
+      "item": "minecraft:chainmail_helmet"
+    },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+  },
+  "criteria": {
+    "stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:chainmail_helmet"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "function:combate/chainmail_helmet"
+  },
+  "parent": "fullitem:combate/root"
+}
